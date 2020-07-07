@@ -8,7 +8,7 @@ resource "aws_s3_bucket" "b" {
   }
 }
 
-resource "aws_s3_bucket" "b" {
+resource "aws_s3_bucket" "b2" {
   bucket = "jmartinson-asdf-bucket2"
   acl    = "private"
 
