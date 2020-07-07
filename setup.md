@@ -31,7 +31,7 @@
 
 ## Config Vault role to create IAM user 
 
-    vault write aws/roles/s3-role \
+    vault write aws/roles/s3-iam-role \
         credential_type=iam_user \
         ttl=600s \
         policy_document=-<<EOF
