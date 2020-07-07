@@ -50,7 +50,7 @@
   }
   ]
 }
-    EOF
+EOF
 
 
     # vault read aws/creds/s3-iam-role
