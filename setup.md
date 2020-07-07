@@ -1,7 +1,9 @@
 ## Create Vault namespace
 
     vault namespace create tfe-aws-vault
+
     export VAULT_NAMESPACE=tfe-aws-vault
+
     vault policy write space-admin - <<EOF
     path "*" {
     capabilities = ["create", "read", "update", "delete", "list", "sudo"]
@@ -17,7 +19,9 @@
     vault token create -policy=space-admin 
 
     vault login <-- space admin token
+
     vault secrets enable aws
+    
     vault write aws/config/root \
     access_key=$AWS_ACCESS_KEY_ID \
     secret_key=$AWS_SECRET_ACCESS_KEY \
