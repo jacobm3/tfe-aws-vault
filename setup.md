@@ -21,7 +21,7 @@
     vault login <-- space admin token
 
     vault secrets enable aws
-    
+
     vault write aws/config/root \
     access_key=$AWS_ACCESS_KEY_ID \
     secret_key=$AWS_SECRET_ACCESS_KEY \
@@ -35,4 +35,12 @@
     EOF
 
 
-    vault read aws/creds/s3-role
+    # vault read aws/creds/s3-role
+    Key                Value
+    ---                -----
+    lease_id           aws/creds/s3-role/mMwZnuMMm5v5ljm7oGgCRHP9.vpqor
+    lease_duration     1h
+    lease_renewable    false
+    access_key         ASIAZ5KZGVEGAXXXXXXX
+    secret_key         hQkbjfmz1LXXXXXXXXXXXXXXXXXXXXXXXX
+    security_token     FwoGZXIvYXdzEEIaDBd3DihuJ1P+EvB8/yK2AUG+83iUznQtWPEXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX==
