@@ -8,13 +8,13 @@ resource "aws_s3_bucket" "b" {
   }
 }
 
-# resource "aws_s3_bucket" "b2" {
-#   bucket = "jmartinson-asdf-bucket2"
-#   acl    = "private"
+resource "aws_s3_bucket" "b2" {
+  bucket = "jmartinson-asdf-bucket2"
+  acl    = "private"
 
-#   tags = {
-#     Name        = "My bucket"
-#     Environment = "Dev"
-#   }
-# }
+  tags = {
+    Name        = "My bucket"
+    Environment = "Dev"
+  }
+}
 
