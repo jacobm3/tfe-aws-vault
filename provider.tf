@@ -5,7 +5,7 @@ provider "vault" {
 
 data "vault_aws_access_credentials" "creds" {
   backend = "aws"
-  role    = "s3-role"
+  role    = "s3-iam-role"
   #type    = "sts"
 }
 
