@@ -39,7 +39,7 @@
     EOF
 
 
-    # vault read aws/creds/s3-role
+    # vault read aws/creds/s3-iam-role
     Key                Value
     ---                -----
     lease_id           aws/creds/s3-role/mMwZnuMMm5v5ljm7oGgCRHP9.vpqor
@@ -59,7 +59,7 @@
     EOF
 
 
-    # vault read aws/creds/s3-role
+    # vault read aws/creds/s3-sts-role
     Key                Value
     ---                -----
     lease_id           aws/creds/s3-role/mMwZnuMMm5v5ljm7oGgCRHP9.vpqor
