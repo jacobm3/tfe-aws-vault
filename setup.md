@@ -35,7 +35,21 @@
         credential_type=iam_user \
         ttl=600s \
         policy_document=-<<EOF
-    { "Version": "2012-10-17", "Statement": [ { "Effect": "Allow", "Action": "s3:*", "Resource": "*" } ] } 
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": "s3:*",
+      "Resource": "*"
+    },
+    {
+      "Effect": "Allow",
+      "Action": "iam:GetUser",
+      "Resource": "*"
+  }
+  ]
+}
     EOF
 
 
