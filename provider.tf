@@ -17,7 +17,7 @@ provider "aws" {
 }
 
 
-# # STS
+# # Federated STS token
 # data "vault_aws_access_credentials" "creds" {
 #   backend = "aws"
 #   role    = "s3-sts-role"
