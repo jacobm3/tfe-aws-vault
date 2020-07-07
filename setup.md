@@ -33,7 +33,7 @@
 
     vault write aws/roles/s3-iam-role \
         credential_type=iam_user \
-        ttl=600s \
+        ttl=300s \
         policy_document=-<<EOF
         {
         "Version": "2012-10-17",
@@ -67,7 +67,7 @@ EOF
 
     vault write aws/roles/s3-sts-role \
         credential_type=federation_token \
-        ttl=600s \
+        ttl=300s \
         policy_document=-<<EOF
     { "Version": "2012-10-17", "Statement": [ { "Effect": "Allow", "Action": "s3:*", "Resource": "*" } ] } 
     EOF
