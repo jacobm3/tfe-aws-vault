@@ -50,7 +50,7 @@
             }
         ]
         }
-EOF
+    EOF
 
 
     # vault read aws/creds/s3-iam-role
@@ -70,7 +70,7 @@ EOF
         ttl=300s \
         policy_document=-<<EOF
     { "Version": "2012-10-17", "Statement": [ { "Effect": "Allow", "Action": "s3:*", "Resource": "*" } ] } 
-EOF
+    EOF
 
 
     # vault read aws/creds/s3-sts-role
